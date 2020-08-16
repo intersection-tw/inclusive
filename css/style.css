@@ -8,14 +8,18 @@
 }
 
 html {
-  font-family: Asap, sans-serif;
+  font-family: 'Asap', sans-serif;
   font-size: calc(1em + 0.2vw + 0.2vh);
   color: #111;
   line-height: 1.4;
 }
 
 [lang="ja"] * {
-  font-family: Asap, sans-serif;
+  font-family: 'Asap', sans-serif;
+}
+
+[lang="zh-hant-TW"] * {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 [lang="ja"] small,
