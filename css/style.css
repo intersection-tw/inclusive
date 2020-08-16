@@ -1,0 +1,382 @@
+*, *::before, *::after {
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Asap, sans-serif;
+  font-size: calc(1em + 0.2vw + 0.2vh);
+  color: #111;
+  line-height: 1.4;
+}
+
+[lang="ja"] * {
+  font-family: Asap, sans-serif;
+}
+
+[lang="ja"] small,
+[lang="zh-hant-TW"] small {
+  font-size: 0.66rem;
+}
+
+header > div, main {
+  background-color: #fefefe;
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 1.4rem;
+  display: block;
+}
+
+header > div {
+  padding-bottom: 0;
+}
+
+header p {
+  font-size: 0.66rem;
+  margin-top: 0;
+}
+
+header img {
+  height: 1rem;
+  width: auto;
+}
+
+* + * {
+  margin-top: 1.4rem;
+}
+
+body, br, dt, dd, th, td, option, [hidden] + *, li + li {
+  margin-top: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+p + p {
+  margin-top: 0.75rem;
+}
+
+header p + p {
+  margin-top: 0.125rem;
+}
+
+a {
+  color: #1b75bc;
+  text-decoration-skip: ink;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a:hover, button:hover, .languages [aria-current] {
+  text-decoration: none;
+  border-bottom: 2px solid #fcb316;
+  margin-bottom: -2px;
+}
+
+:focus:not([tabindex="-1"]) {
+  outline: 0.125rem solid #fcb316;
+  outline-offset: 0.125rem;
+  border: 0;
+}
+
+/* fix for IE :( */
+div[tabindex]:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: Miriam Libre, serif;
+  line-height: 1.1;
+}
+
+strong {
+  font-family: Miriam Libre, serif;
+}
+
+h1 {
+  font-size: 3rem;
+  background-size: auto 85%;
+  word-spacing: 30rem;
+}
+
+[lang="ja"] h1 {
+  font-size: 2.5rem;
+  font-family: Miriam Libre, serif;
+}
+
+.title-and-illustration {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.title-and-illustration img {
+  width: 40%;
+  height: auto;
+  margin-top: 0.75em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#introduction {
+  margin: 0.7rem 0 2.45rem;
+}
+
+.principle-container + .principle-container {
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px dashed;
+}
+
+@media (max-width: 500px) {
+ h1 {
+   font-size: 2.5rem;
+ }
+}
+
+@media (max-width: 370px) {
+  .title-and-illustration img {
+    width: 37%;
+    margin-top: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 0.75rem 0 0.6rem;
+  border: 1px solid;
+  border-left: 0;
+  border-right: 0;
+  line-height: 1;
+  margin-top: 2.1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h3 a img {
+  width: 0.85em;
+  height: auto;
+  vertical-align: super;
+}
+
+p [src*="link.svg"] {
+  width: 1em;
+  height: auto;
+}
+
+.principle-name {
+  font-family: Miriam Libre, serif;
+  color: #111;
+}
+
+[lang="ja"] .principle-name {
+  font-family: inherit;
+}
+
+.intro, .with-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.with-button {
+  align-items: center;
+}
+
+.intro button, .with-button button {
+  margin: 0;
+  border: 0;
+  background: 0;
+  color: #1b75bc;
+  border-bottom: 2px solid #fefefe;
+}
+
+.intro button, .intro button:hover {
+  border: 0;
+}
+
+.intro h3 {
+  cursor: pointer;
+}
+
+.with-button button {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.with-button button:hover {
+  text-decoration: none;
+  border-color: #fcb316;
+}
+
+.intro a {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.intro ~ .intro {
+  border-top: 1px dashed;
+  padding-top: 1.4rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+main ul {
+  padding-left: 2em;
+  font-size: 0.85rem;
+}
+
+main ul li + li {
+  border-top: 1px solid;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+nav[aria-label="page"] {
+  text-align: right;
+  background: url(/images/line.svg) repeat-x center;
+  font-size: 0.8rem;
+}
+
+nav[aria-label="page"] ul {
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #fefefe;
+  line-height: 1;
+}
+
+nav li {
+  display: inline-block;
+  font-family: Miriam Libre, serif;
+  padding-left: 0.5rem;
+}
+
+nav[aria-label="principles"] {
+  background: #111;
+}
+
+nav[aria-label="principles"] ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  margin: 0;
+}
+
+nav[aria-label="principles"] li {
+  padding: 0.7rem;
+  width: 50%;
+  margin: 0;
+  border: 0;
+}
+
+nav[aria-label="principles"] a {
+  background: #fff;
+  outline: 0.25rem solid #fff;
+  border: 2px solid #fff;
+}
+
+nav[aria-label="principles"] a:focus {
+  outline: 0.25rem solid #fff;
+  text-decoration: underline;
+}
+
+button i::before {
+  color: #1b75bc;
+}
+
+[data-expands] svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+[data-expands][aria-expanded="true"] .up-strut {
+  display: none;
+}
+
+[data-expands]:hover svg g {
+  color: #fcb316;
+}
+
+footer {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0 1.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.project-foot strong {
+  font-size: 1.25em;
+}
+
+.project-foot img {
+  margin: 0 0.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+}
+
+.project-foot a, .project-foot a:hover {
+  border: 0;
+  margin-bottom: 0;
+}
+
+[rel="license"] {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.smaller {
+  font-size: 0.85rem;
+}
+
+.languages {
+  margin-top: 0;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+}
+
+.languages * {
+  font-size: inherit;
+  display: inline;
+}
+
+.languages h2 {
+  font-size: inherit;
+  text-transform: none;
+  border: 0;
+}
+
+.languages li {
+  margin-left: 0.25rem;
+}
+
+@media print {
+
+  [hidden] {
+    display: block !important;
+  }
+
+  [data-expandall], [data-expands], .examples + p {
+    display: none !important;
+  }
+
+}
