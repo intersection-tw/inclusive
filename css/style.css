@@ -183,7 +183,7 @@ p [src*="link.svg"] {
 }
 
 .principle-name {
-  font-family: Miriam Libre, serif;
+  font-family: 'Miriam Libre', 'Noto Sans TC', serif;
   color: #111;
 }
 
@@ -270,7 +270,7 @@ nav[aria-label="page"] ul {
 
 nav li {
   display: inline-block;
-  font-family: Miriam Libre, serif;
+  font-family: 'Miriam Libre', 'Noto Sans TC', serif;
   padding-left: 0.5rem;
 }
 
