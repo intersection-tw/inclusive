@@ -100,12 +100,12 @@ div[tabindex]:focus {
 }
 
 h1, h2, h3, h4 {
-  font-family: Miriam Libre, serif;
+  font-family: 'Miriam Libre', 'Noto Sans TC', serif;
   line-height: 1.1;
 }
 
 strong {
-  font-family: Miriam Libre, serif;
+  font-family: 'Miriam Libre', 'Noto Sans TC', serif;
 }
 
 h1 {
@@ -116,7 +116,7 @@ h1 {
 
 [lang="ja"] h1 {
   font-size: 2.5rem;
-  font-family: Miriam Libre, serif;
+  font-family: 'Miriam Libre', serif;
 }
 
 .title-and-illustration {
